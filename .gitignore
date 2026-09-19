@@ -1,0 +1,25 @@
+# Dependencies (recreated by `npm install`)
+node_modules/
+
+# Local databases: your accounts, bookings and test data. Never commit these;
+# they hold (prototype, plain-text) passwords and would conflict on every merge.
+data/
+
+# Generated from src/ by `npm run build`. Edit src/, never this file.
+/index.html
+
+# Test output
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+
+# Secrets (for later: API keys, Stripe, Mapbox)
+.env
+.env.*
+
+# OS and editor clutter
+*.log
+.DS_Store
+Thumbs.db
+desktop.ini

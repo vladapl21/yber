@@ -1,0 +1,21 @@
+{
+  "name": "yber",
+  "version": "0.1.0",
+  "private": true,
+  "description": "YBER: boat and yacht rentals, the first layer of an all-in-one marina app.",
+  "scripts": {
+    "build": "node build.js",
+    "start": "node build.js && node server.js",
+    "test": "node build.js && playwright test",
+    "test:file": "node build.js && playwright test --project=file",
+    "test:server": "node build.js && playwright test --project=server",
+    "test:ui": "node build.js && playwright test --ui",
+    "reset": "node -e \"require('fs').rmSync('data', { recursive: true, force: true }); console.log('Local data wiped. The next npm start re-seeds it.')\""
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.56.0"
+  }
+}

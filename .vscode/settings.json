@@ -1,0 +1,10 @@
+{
+  "files.readonlyInclude": { "index.html": true },
+  "search.exclude": { "index.html": true, "node_modules": true, "data": true, "test-results": true },
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false
+}

@@ -1,0 +1,13 @@
+# Store every text file with LF line endings, and check them out with LF on every OS.
+# Without this, a Windows machine and a Mac editing the same file produce diffs where
+# every line looks changed.
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.webp binary
+*.pdf binary
+*.zip binary
