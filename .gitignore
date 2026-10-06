@@ -7,6 +7,7 @@ data/
 
 # Generated from src/ by `npm run build`. Edit src/, never this file.
 /index.html
+dist/
 
 # Test output
 test-results/
