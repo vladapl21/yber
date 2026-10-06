@@ -5,6 +5,7 @@
   "description": "YBER: boat and yacht rentals, the first layer of an all-in-one marina app.",
   "scripts": {
     "build": "node build.js",
+    "build:site": "node build.js --dist",
     "start": "node build.js && node server.js",
     "test": "node build.js && playwright test",
     "test:file": "node build.js && playwright test --project=file",

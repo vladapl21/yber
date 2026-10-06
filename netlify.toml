@@ -1,0 +1,10 @@
+# Tells Netlify how to build the site. Settings here override the ones in the Netlify dashboard.
+# index.html is generated from src/ and is not in Git, so Netlify has to build it.
+[build]
+  command = "npm run build:site"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "24"
+  # The test runner is a dev dependency; the hosted site never needs a browser download.
+  PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD = "1"

@@ -29,6 +29,12 @@ npm run test:ui                    # same, with a window showing each step
 port 3100 with a throwaway database. It never touches `data/db.json`. GitHub runs the same suite on every
 pull request (`.github/workflows/tests.yml`).
 
+## Hosted preview (Netlify)
+
+`netlify.toml` tells Netlify to run `npm run build:site` and publish `dist/`. Netlify serves static files
+only, so `server.js` does not run there: the hosted site uses the in-browser store, and each visitor's
+accounts, listings and bookings exist only in their own browser. Use it to show the product, not to share data.
+
 Working with others: see [CONTRIBUTING.md](CONTRIBUTING.md). Using Claude Code: it reads [CLAUDE.md](CLAUDE.md).
 
 ## What is real and what is simulated
